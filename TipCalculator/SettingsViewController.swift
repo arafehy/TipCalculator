@@ -16,7 +16,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Get and set current default tip from UserDefaults
+        // Get and set control to current default tip from UserDefaults
         defaultTipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
     }
     

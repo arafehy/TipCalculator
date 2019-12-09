@@ -23,6 +23,7 @@ class TipViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        // Get and set control to current default tip from UserDefaults
         tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
         
         // Make the keyboard appear automatically and is the first responder
