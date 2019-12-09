@@ -24,6 +24,9 @@ class TipViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
+        
+        // Make the keyboard appear automatically and is the first responder
+        billField.becomeFirstResponder()
     }
     
     @IBAction func onTap(_ sender: Any) {
