@@ -8,16 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TipViewController: UIViewController {
     
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultTip")
     }
     
     @IBAction func onTap(_ sender: Any) {
@@ -25,7 +31,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculateTip(_ sender: Any) {
-        
         // Get the bill amount
         let bill = Double(billField.text!) ?? 0
         
@@ -40,4 +45,3 @@ class ViewController: UIViewController {
         totalLabel.text = String(format: "$%.2f", total)
     }
 }
-

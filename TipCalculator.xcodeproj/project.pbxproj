@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E071D073239E10FC00B79D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071D072239E10FC00B79D20 /* AppDelegate.swift */; };
 		E071D075239E10FC00B79D20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071D074239E10FC00B79D20 /* SceneDelegate.swift */; };
-		E071D077239E10FC00B79D20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071D076239E10FC00B79D20 /* ViewController.swift */; };
+		E071D077239E10FC00B79D20 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071D076239E10FC00B79D20 /* TipViewController.swift */; };
 		E071D07A239E10FC00B79D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E071D078239E10FC00B79D20 /* Main.storyboard */; };
 		E071D07C239E10FE00B79D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E071D07B239E10FE00B79D20 /* Assets.xcassets */; };
 		E071D07F239E10FE00B79D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E071D07D239E10FE00B79D20 /* LaunchScreen.storyboard */; };
+		E071D087239E1BE200B79D20 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E071D086239E1BE100B79D20 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E071D06F239E10FC00B79D20 /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E071D072239E10FC00B79D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E071D074239E10FC00B79D20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E071D076239E10FC00B79D20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E071D076239E10FC00B79D20 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		E071D079239E10FC00B79D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E071D07B239E10FE00B79D20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E071D07E239E10FE00B79D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E071D080239E10FE00B79D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E071D086239E1BE100B79D20 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				E071D072239E10FC00B79D20 /* AppDelegate.swift */,
 				E071D074239E10FC00B79D20 /* SceneDelegate.swift */,
-				E071D076239E10FC00B79D20 /* ViewController.swift */,
+				E071D076239E10FC00B79D20 /* TipViewController.swift */,
+				E071D086239E1BE100B79D20 /* SettingsViewController.swift */,
 				E071D078239E10FC00B79D20 /* Main.storyboard */,
 				E071D07B239E10FE00B79D20 /* Assets.xcassets */,
 				E071D07D239E10FE00B79D20 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E071D077239E10FC00B79D20 /* ViewController.swift in Sources */,
+				E071D077239E10FC00B79D20 /* TipViewController.swift in Sources */,
 				E071D073239E10FC00B79D20 /* AppDelegate.swift in Sources */,
 				E071D075239E10FC00B79D20 /* SceneDelegate.swift in Sources */,
+				E071D087239E1BE200B79D20 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
