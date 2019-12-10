@@ -15,11 +15,18 @@ class TipViewController: UIViewController {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
     let defaults = UserDefaults.standard
+    let currencyFormatter = NumberFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        // Set number format to use grouping separator and currency style
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        
+        // Use locale specific currency
+        tipLabel.text = currencyFormatter.string(from: 0)
+        totalLabel.text = currencyFormatter.string(from: 0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,6 +35,9 @@ class TipViewController: UIViewController {
         
         // Make the keyboard appear automatically and is the first responder
         billField.becomeFirstResponder()
+        
+        // Get current locale
+        currencyFormatter.locale = Locale.autoupdatingCurrent
     }
     
     @IBAction func onTap(_ sender: Any) {
@@ -45,7 +55,7 @@ class TipViewController: UIViewController {
         let total = bill + tip
         
         // Update the tip and total labels
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
+        tipLabel.text = currencyFormatter.string(from: NSNumber(value: tip))
+        totalLabel.text = currencyFormatter.string(from: NSNumber(value: total))
     }
 }
